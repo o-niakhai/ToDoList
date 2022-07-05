@@ -169,7 +169,6 @@
             },
           }
         );
-  
         if (response.ok) {
           removeTodo(todoId);
         } else {
