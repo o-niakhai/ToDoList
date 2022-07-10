@@ -64,7 +64,7 @@
       Promise.all([getAllTodos(), getAllUsers()]).then((values) => {
         [todos, users] = values;
   
-        // Отправить в разметку
+        // Send to markup
         todos.forEach((todo) => printTodo(todo));
         users.forEach((user) => createUserOption(user));
       });
