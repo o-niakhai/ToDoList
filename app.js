@@ -15,6 +15,7 @@
       const user = users.find((u) => u.id === userId);
       return user.name;
     }
+
     function printTodo({ id, userId, title, completed }) {
       const li = document.createElement('li');
       li.className = 'todo-item';
@@ -78,12 +79,14 @@
         completed: false,
       });
     }
+
     function handleTodoChange() {
       const todoId = this.parentElement.dataset.id;
       const completed = this.checked;
   
       toggleTodoComplete(todoId, completed);
     }
+    
     function handleClose() {
       const todoId = this.parentElement.dataset.id;
       deleteTodo(todoId);
