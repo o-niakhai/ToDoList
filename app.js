@@ -106,7 +106,6 @@
       }
     }
   
-    
     async function getAllUsers() {
       try {
         const response = await fetch(
